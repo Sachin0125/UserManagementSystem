@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UMS\\UserManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9AA40D-D903-47D1-A604-A9BD47B57BE9}|..\\UserManagementSystem.test\\UserManagementSystem.test.csproj|d:\\ums\\usermanagementsystem.test\\unittests\\unittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9AA40D-D903-47D1-A604-A9BD47B57BE9}|..\\UserManagementSystem.test\\UserManagementSystem.test.csproj|d:\\ums\\usermanagementsystem.test\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9AA40D-D903-47D1-A604-A9BD47B57BE9}|..\\UserManagementSystem.test\\UserManagementSystem.test.csproj|d:\\ums\\usermanagementsystem.test\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{262CBD9B-0F2E-484F-8114-14E44030F3D2}|UserManagementSystem.csproj|d:\\ums\\usermanagementsystem\\models\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{262CBD9B-0F2E-484F-8114-14E44030F3D2}|UserManagementSystem.csproj|solutionrelative:models\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{262CBD9B-0F2E-484F-8114-14E44030F3D2}|UserManagementSystem.csproj|d:\\ums\\usermanagementsystem\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{262CBD9B-0F2E-484F-8114-14E44030F3D2}|UserManagementSystem.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\UMS\\UserManagementSystem\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\UMS\\UserManagementSystem\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T22:26:06.071Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\UMS\\UserManagementSystem.test\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "..\\UserManagementSystem.test\\Models\\Login.cs",
+              "ToolTip": "D:\\UMS\\UserManagementSystem.test\\Models\\Login.cs",
+              "RelativeToolTip": "..\\UserManagementSystem.test\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T20:10:28.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "D:\\UMS\\UserManagementSystem.test\\Constants.cs",
+              "RelativeDocumentMoniker": "..\\UserManagementSystem.test\\Constants.cs",
+              "ToolTip": "D:\\UMS\\UserManagementSystem.test\\Constants.cs",
+              "RelativeToolTip": "..\\UserManagementSystem.test\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T19:22:07.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTests.cs",
+              "DocumentMoniker": "D:\\UMS\\UserManagementSystem.test\\UnitTests\\UnitTests.cs",
+              "RelativeDocumentMoniker": "..\\UserManagementSystem.test\\UnitTests\\UnitTests.cs",
+              "ToolTip": "D:\\UMS\\UserManagementSystem.test\\UnitTests\\UnitTests.cs",
+              "RelativeToolTip": "..\\UserManagementSystem.test\\UnitTests\\UnitTests.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T19:18:16.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\UMS\\UserManagementSystem\\Models\\User\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User\\User.cs",
+              "ToolTip": "D:\\UMS\\UserManagementSystem\\Models\\User\\User.cs",
+              "RelativeToolTip": "Models\\User\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:28:44.649Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

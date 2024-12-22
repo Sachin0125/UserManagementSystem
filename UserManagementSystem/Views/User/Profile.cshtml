@@ -1,0 +1,52 @@
+﻿@model UserManagementSystem.Models.User.UserProfileDto
+@{
+    ViewData["Title"] = "Profile";
+}
+<div class="container">
+    <main role="main" class="pb-3" style="background-color:floralwhite">
+        <section>
+            <div class="container-fluid h-custom">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-md-9 col-lg-6 col-xl-5">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                             class="img-fluid" alt="Sample image">
+                    </div>
+                    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1" id="container-body">
+                        <h3>Profile Information</h3>
+                        <hr />
+                        <form method="post">
+                            @Html.AntiForgeryToken()
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="form-row">
+                                <div class="form-group ">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="FirstName" value="@Model.FirstName" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="LastName" value="@Model.LastName" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="Username">Username</label>
+                                    <input type="text" id="Username" name="Username" value="@Model.UserName" class="form-control" disabled />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="Email">Email</label>
+                                    <input type="email" id="Email" name="Email" class="form-control" value="@Model.Email" disabled />
+                                </div>
+                            </div>
+                            <!-- Hidden field to pass Username to the server -->
+                            <input type="hidden" name="Username" value="@Model.UserName" />
+                            <input type="hidden" name="Email" value="@Model.Email" />
+                            <button type="submit" class="btn btn-primary mt-3">Update</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
