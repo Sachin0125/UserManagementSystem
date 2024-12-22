@@ -35,10 +35,10 @@ namespace UserApi.Controllers
         public async Task<IActionResult> RegisterUser([FromBody] UserRegistrationDTO model)
         {
             if (await _context.Users.AnyAsync(u => u.Email == model.Email))
-                return BadRequest("Email is already taken.");
+                return BadRequest(AppConstants.EMAIL_ALREADY_EXIST_ERROR);
 
             if (await _context.Users.AnyAsync(u => u.UserName == model.UserName))
-                return BadRequest("UserName is already taken.");
+                return BadRequest(AppConstants.USERNAME_ALREADY_EXIST_ERROR);
 
             var hashedPassword = BCrypt.Net.BCrypt.HashPassword(model.Password);
             var user = new User
@@ -57,7 +57,7 @@ namespace UserApi.Controllers
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = "User registered successfully." });
+            return Ok(new { message = AppConstants.USER_REGISTERED_MSG });
         }
 
         /// <summary>
@@ -73,7 +73,7 @@ namespace UserApi.Controllers
         {
             var user = await _context.Users.SingleOrDefaultAsync(u => (u.UserName == model.LoginId) || (u.Email == model.LoginId));
             if (user == null || !BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
-                return Unauthorized("Invalid credentials.");
+                return Unauthorized(AppConstants.INVALID_CRED_ERROR);
 
             // Generate JWT token
             var token = GenerateJwtToken(user);
@@ -118,7 +118,7 @@ namespace UserApi.Controllers
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
             var user = await _context.Users.FindAsync(userId);
 
-            if (user == null) return NotFound("User not found.");
+            if (user == null) return NotFound(AppConstants.USER_NOTFOUND_ERROR);
 
             user.FirstName = model.FirstName ?? string.Empty;
             user.LastName = model.LastName ?? string.Empty;

@@ -13,14 +13,12 @@ using Serilog;
 
 
 var secretKey = Environment.GetEnvironmentVariable("JWT__SALT");
-var issuerAndAudience = Environment.GetEnvironmentVariable("raj");
-//var issuerAndAudience = Environment.GetEnvironmentVariable("JWT__ISSUER");
+var issuerAndAudience = Environment.GetEnvironmentVariable("JWT__ISSUER");
 
 if (string.IsNullOrEmpty(secretKey) || string.IsNullOrEmpty(issuerAndAudience))
 {
-    throw new InvalidOperationException("JWT secret key or issuer/audience is not set.");
+    throw new InvalidOperationException(AppConstants.ENV_VAR_MISSING_ERROR);
 }
-
 
 var builder = WebApplication.CreateBuilder(args);
 
