@@ -5,12 +5,12 @@ namespace UserManagementSystem.Models.User
 {
     public class UserLoginDto
     {
-        //[Required]
-        //[RestrictSpecialCharacters(allowedSpecialChars:"@,.,-,_")]
-        //[StringRange(3, 50)]
+        [Required]
+        [RestrictSpecialCharacters(allowedSpecialChars: "@,.,-,_")]
+        [StringRange(3, 50)]
         public string LoginId { get; set; }
-        //[Required]
-        //[StringRange(6, 20)]
+        [Required]
+        [StringRange(6, 20)]
         public string Password { get; set; }
     }
     public class TokenResponse
@@ -28,11 +28,11 @@ namespace UserManagementSystem.Models.User
         [StringRange(6, 20)]
         public string Password { get; set; }
 
-        //[Required]
-        //[CompareProperties("passwordHash", ErrorMessage = "Passwords do not match.")]
-        //[MinLength(6, ErrorMessage = "Password must be at least 6 characters.")]
-        //public string ConfirmPassword { get; set; }
-        
+        [Required]
+        [StringRange(6, 20)]
+        [Compare("Password", ErrorMessage="Password do not match.")]
+        public string ConfirmPassword { get; set; }
+
         [StringRange(0, 50)]
         public string? FirstName { get; set; }
 
